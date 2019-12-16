@@ -1,0 +1,29 @@
+{
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  },
+  "resources" : [
+    {
+      "filename" : "fotoCuaderno.arreferenceimage"
+    },
+    {
+      "filename" : "hive.arreferenceimage"
+    },
+    {
+      "filename" : "londres.arreferenceimage"
+    },
+    {
+      "filename" : "pokeball.arreferenceimage"
+    },
+    {
+      "filename" : "sora.arreferenceimage"
+    },
+    {
+      "filename" : "tostaRica.arreferenceimage"
+    },
+    {
+      "filename" : "zapatilla.arreferenceimage"
+    }
+  ]
+}

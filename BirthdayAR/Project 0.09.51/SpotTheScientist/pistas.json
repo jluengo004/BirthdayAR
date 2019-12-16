@@ -1,0 +1,37 @@
+{
+    "pokeball": {
+        "name": "Código Inicial",
+        "bio": "Tomando nuestro libro,\nHayarás lo que quieres,\nEn la panoramica trés,\nEmpezando al revés",
+        "country": "uk"
+    },
+    "fotoCuaderno": {
+        "name": "Hallstat",
+        "bio": "Con pies de payaso,\nY junto a un alado,\nProtege la llave,\nDe la siguiente clave",
+        "country": "sorapa"
+    },
+    "hive": {
+        "name": "Hive",
+        "bio": "Caliente te deja,\nAnda en pareja,\nSu superficie,\nBigote contiene",
+        "country": "uk"
+    },
+    "zapatilla": {
+        "name": "Zapatilla",
+        "bio": "Enamorada de una ciudad,\nFelicidad sin igualdad,\nQue hermosa captura,\nEn siete centímetros de altura",
+        "country": "uk"
+    },
+    "londres": {
+        "name": "Viaje a Londres",
+        "bio": "Antes de entregártelo se mojó,\nY a por ayuda desamparado huyó,\nEl frío de el se apoderó,\nY encerrado se quedó",
+        "country": "uk"
+    },
+    "tostaRica": {
+        "name": "Ñam Ñam",
+        "bio": "Pequeña calefacción,\nPinta con emoción,\nNegro, blanco o naranja,\nTu hambre aplaca",
+        "country": "uk"
+    },
+    "sora": {
+        "name": "Sora",
+        "bio": "Rodeado de pisadas,\nEn la fria tabla,\nDonde la luz no alcanza,\nUn tesoro aguarda",
+        "country": "uk"
+    }
+}
