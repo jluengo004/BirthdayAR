@@ -9,15 +9,29 @@
 import UIKit
 import SceneKit
 import ARKit
+import AVFoundation
 
 class ViewController: UIViewController, ARSCNViewDelegate {
+    
     @IBOutlet var sceneView: ARSCNView!
+    
+    @IBOutlet var cofrePokeball1: UIButton!
+    @IBOutlet var cofreFotoLibro2: UIButton!
+    @IBOutlet var cofreSora3: UIButton!
+    @IBOutlet var cofreHive4: UIButton!
+    
+    @IBOutlet var cofreZapatilla5: UIButton!
+    @IBOutlet var cofreLondres6: UIButton!
+    @IBOutlet var cofreTostaRica7: UIButton!
+    @IBOutlet var cofreTostadora8: UIButton!
+    @IBOutlet var cofreFotoKira9: UIButton!
+
     var pistas = [String: Pistas]()
+    var player: AVAudioPlayer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Set the view's delegate
+
         sceneView.delegate = self
         loadData()
     }
@@ -99,7 +113,11 @@ class ViewController: UIViewController, ARSCNViewDelegate {
 
             flagNode.position.y -= Float(plane.height / 2) + spacing
             planeNode.addChildNode(flagNode)
-
+            
+            DispatchQueue.main.async {
+                    self.updateChest(name: name)
+                    self.playSound()
+            }
 
             return node
         }
@@ -144,13 +162,74 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             flagNode.position.y -= Float(plane.height / 2) + spacing
             planeNode.addChildNode(flagNode)
 
-
+            DispatchQueue.main.async {
+                    self.updateChest(name: name)
+                    self.playSound()
+            }
+            
+            
             return node
 
         }
         
         return nil
         
+    }
+    
+    func updateChest(name: String){
+        switch name {
+        case "pokeBall":
+            cofrePokeball1.isEnabled = true
+            cofrePokeball1.setImage(UIImage(named: "cofre_abierto"), for: .normal)
+        case "fotoCuaderno":
+            cofreFotoLibro2.isEnabled = true
+            cofreFotoLibro2.setImage(UIImage(named: "cofre_abierto"), for: .normal)
+        case "sora":
+            cofreSora3.isEnabled = true
+            cofreSora3.setImage(UIImage(named: "cofre_abierto"), for: .normal)
+        case "hive":
+            cofreHive4.isEnabled = true
+            cofreHive4.setImage(UIImage(named: "cofre_abierto"), for: .normal)
+        case "zapatilla":
+            cofreZapatilla5.isEnabled = true
+            cofreZapatilla5.setImage(UIImage(named: "cofre_abierto"), for: .normal)
+        case "londres":
+            cofreLondres6.isEnabled = true
+            cofreLondres6.setImage(UIImage(named: "cofre_abierto"), for: .normal)
+        case "tostaRica":
+            cofreTostaRica7.isEnabled = true
+            cofreTostaRica7.setImage(UIImage(named: "cofre_abierto"), for: .normal)
+        case "tostadora":
+            cofreTostadora8.isEnabled = true
+            cofreTostadora8.setImage(UIImage(named: "cofre_abierto"), for: .normal)
+        case "kira":
+            cofreFotoKira9.isEnabled = true
+            cofreFotoKira9.setImage(UIImage(named: "cofre_abierto"), for: .normal)
+        default:
+            break
+        }
+    }
+    
+    func playSound() {
+        guard let url = Bundle.main.url(forResource: "zelda_item", withExtension: "mp3") else { return }
+
+        do {
+            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
+            try AVAudioSession.sharedInstance().setActive(true)
+
+            /* The following line is required for the player to work on iOS 11. Change the file type accordingly*/
+            player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
+
+            /* iOS 10 and earlier require the following line:
+            player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileTypeMPEGLayer3) */
+
+            guard let player = player else { return }
+
+            player.play()
+
+        } catch let error {
+            print(error.localizedDescription)
+        }
     }
 
     func loadData() {

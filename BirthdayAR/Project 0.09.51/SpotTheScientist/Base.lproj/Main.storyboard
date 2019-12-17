@@ -1,37 +1,114 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tXr-a1-R10">
             <objects>
-                <viewController id="BV1-FR-VrT" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BV1-FR-VrT" customClass="ViewController" customModule="SpotTheScientist" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="U0K-SW-4ec">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BrB-h1-WRS">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
                             </arscnView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sOU-2q-VgE">
+                                <rect key="frame" x="0.0" y="766" width="414" height="130"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="44" translatesAutoresizingMaskIntoConstraints="NO" id="2qB-KR-XsW">
+                                        <rect key="frame" x="41" y="10" width="332" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QXf-PA-Eh1">
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                <state key="normal" image="cofre_cerrado"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t6q-Ej-4h2">
+                                                <rect key="frame" x="94" y="0.0" width="50" height="50"/>
+                                                <state key="normal" image="cofre_cerrado"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pj3-Jo-XVh">
+                                                <rect key="frame" x="188" y="0.0" width="50" height="50"/>
+                                                <state key="normal" image="cofre_cerrado"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ry7-T6-4Ly">
+                                                <rect key="frame" x="282" y="0.0" width="50" height="50"/>
+                                                <state key="normal" image="cofre_cerrado"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="aNd-dm-Y8L">
+                                        <rect key="frame" x="28" y="68" width="358" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="foP-hv-EL7">
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                <state key="normal" image="cofre_cerrado"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KPd-vL-ZlH">
+                                                <rect key="frame" x="77" y="0.0" width="50" height="50"/>
+                                                <state key="normal" image="cofre_cerrado"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v6E-Dd-u3e">
+                                                <rect key="frame" x="154" y="0.0" width="50" height="50"/>
+                                                <state key="normal" image="cofre_cerrado"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OMw-yU-2ht">
+                                                <rect key="frame" x="231" y="0.0" width="50" height="50"/>
+                                                <state key="normal" image="cofre_cerrado"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ph-Z5-zX2">
+                                                <rect key="frame" x="308" y="0.0" width="50" height="50"/>
+                                                <state key="normal" image="cofre_cerrado"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="4qg-58-LCY"/>
+                                    <constraint firstItem="aNd-dm-Y8L" firstAttribute="top" secondItem="2qB-KR-XsW" secondAttribute="bottom" constant="8" id="BV8-mW-lZw"/>
+                                    <constraint firstItem="2qB-KR-XsW" firstAttribute="centerX" secondItem="sOU-2q-VgE" secondAttribute="centerX" id="a5y-7f-R6C"/>
+                                    <constraint firstItem="2qB-KR-XsW" firstAttribute="top" secondItem="sOU-2q-VgE" secondAttribute="top" constant="10" id="pV1-51-RXb"/>
+                                    <constraint firstItem="aNd-dm-Y8L" firstAttribute="centerX" secondItem="sOU-2q-VgE" secondAttribute="centerX" id="zTY-Pw-IMJ"/>
+                                </constraints>
+                            </view>
                         </subviews>
-                        <color key="backgroundColor" white="0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="sOU-2q-VgE" firstAttribute="leading" secondItem="fQZ-KI-GVf" secondAttribute="leading" id="15g-mj-ld5"/>
                             <constraint firstItem="BrB-h1-WRS" firstAttribute="leading" secondItem="fQZ-KI-GVf" secondAttribute="leading" id="GsS-dJ-CKf"/>
+                            <constraint firstAttribute="bottom" secondItem="sOU-2q-VgE" secondAttribute="bottom" id="Hni-hM-MfX"/>
                             <constraint firstItem="BrB-h1-WRS" firstAttribute="bottom" secondItem="fQZ-KI-GVf" secondAttribute="bottom" id="VpT-BR-CcM"/>
                             <constraint firstItem="BrB-h1-WRS" firstAttribute="trailing" secondItem="fQZ-KI-GVf" secondAttribute="trailing" id="XyZ-9z-H8e"/>
                             <constraint firstItem="BrB-h1-WRS" firstAttribute="top" secondItem="U0K-SW-4ec" secondAttribute="top" id="rJc-2c-zQA"/>
+                            <constraint firstItem="fQZ-KI-GVf" firstAttribute="trailing" secondItem="sOU-2q-VgE" secondAttribute="trailing" id="xxl-iR-rzY"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fQZ-KI-GVf"/>
                     </view>
                     <connections>
+                        <outlet property="cofreFotoKira9" destination="3ph-Z5-zX2" id="YoF-IB-RYl"/>
+                        <outlet property="cofreFotoLibro2" destination="t6q-Ej-4h2" id="TCo-sS-sLA"/>
+                        <outlet property="cofreHive4" destination="Ry7-T6-4Ly" id="Sq9-F3-Ppu"/>
+                        <outlet property="cofreLondres6" destination="KPd-vL-ZlH" id="Ssf-de-pNd"/>
+                        <outlet property="cofrePokeball1" destination="QXf-PA-Eh1" id="oxJ-Ou-gI4"/>
+                        <outlet property="cofreSora3" destination="Pj3-Jo-XVh" id="dXc-TL-zSK"/>
+                        <outlet property="cofreTostaRica7" destination="v6E-Dd-u3e" id="fgm-Ak-yyJ"/>
+                        <outlet property="cofreTostadora8" destination="OMw-yU-2ht" id="6N0-BJ-62w"/>
+                        <outlet property="cofreZapatilla5" destination="foP-hv-EL7" id="mqJ-Bg-0z5"/>
                         <outlet property="sceneView" destination="BrB-h1-WRS" id="5nT-qQ-ynl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="188" y="107"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="cofre_cerrado" width="50" height="50"/>
+    </resources>
 </document>

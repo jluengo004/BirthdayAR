@@ -13,11 +13,12 @@
 		5194AE442276167D00011F4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5194AE422276167D00011F4B /* LaunchScreen.storyboard */; };
 		5194AE4C22761BD800011F4B /* pistas.json in Resources */ = {isa = PBXBuildFile; fileRef = 5194AE4B22761BD800011F4B /* pistas.json */; };
 		5194AE4E22761BF700011F4B /* Pistas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5194AE4D22761BF700011F4B /* Pistas.swift */; };
+		6D124EEC23A9959A00F25400 /* zelda_item.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6D124EEB23A9959A00F25400 /* zelda_item.mp3 */; };
 		6D3824A323A84085003680FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D3824A223A84085003680FD /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5194AE342276167A00011F4B /* SpotTheScientist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpotTheScientist.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5194AE342276167A00011F4B /* ChristmasAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChristmasAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5194AE372276167A00011F4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5194AE3B2276167A00011F4B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5194AE3E2276167A00011F4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -25,6 +26,7 @@
 		5194AE452276167D00011F4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5194AE4B22761BD800011F4B /* pistas.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pistas.json; sourceTree = "<group>"; };
 		5194AE4D22761BF700011F4B /* Pistas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pistas.swift; sourceTree = "<group>"; };
+		6D124EEB23A9959A00F25400 /* zelda_item.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = zelda_item.mp3; sourceTree = "<group>"; };
 		6D3824A223A84085003680FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -50,7 +52,7 @@
 		5194AE352276167A00011F4B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5194AE342276167A00011F4B /* SpotTheScientist.app */,
+				5194AE342276167A00011F4B /* ChristmasAR.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -61,6 +63,7 @@
 				5194AE372276167A00011F4B /* AppDelegate.swift */,
 				5194AE3B2276167A00011F4B /* ViewController.swift */,
 				5194AE3D2276167A00011F4B /* Main.storyboard */,
+				6D124EEB23A9959A00F25400 /* zelda_item.mp3 */,
 				5194AE422276167D00011F4B /* LaunchScreen.storyboard */,
 				6D3824A223A84085003680FD /* Assets.xcassets */,
 				5194AE452276167D00011F4B /* Info.plist */,
@@ -87,7 +90,7 @@
 			);
 			name = SpotTheScientist;
 			productName = SpotTheScientist;
-			productReference = 5194AE342276167A00011F4B /* SpotTheScientist.app */;
+			productReference = 5194AE342276167A00011F4B /* ChristmasAR.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -128,6 +131,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D124EEC23A9959A00F25400 /* zelda_item.mp3 in Resources */,
 				5194AE4C22761BD800011F4B /* pistas.json in Resources */,
 				5194AE442276167D00011F4B /* LaunchScreen.storyboard in Resources */,
 				6D3824A323A84085003680FD /* Assets.xcassets in Resources */,
@@ -298,7 +302,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibermatica.SpotTheScientist;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ChristmasAR;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -316,7 +320,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibermatica.SpotTheScientist;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ChristmasAR;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
