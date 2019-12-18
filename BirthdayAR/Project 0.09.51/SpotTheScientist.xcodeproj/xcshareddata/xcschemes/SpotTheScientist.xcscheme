@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "5194AE332276167A00011F4B"
-               BuildableName = "SpotTheScientist.app"
+               BuildableName = "ChristmasAR.app"
                BlueprintName = "SpotTheScientist"
                ReferencedContainer = "container:SpotTheScientist.xcodeproj">
             </BuildableReference>
@@ -45,7 +45,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5194AE332276167A00011F4B"
-            BuildableName = "SpotTheScientist.app"
+            BuildableName = "ChristmasAR.app"
             BlueprintName = "SpotTheScientist"
             ReferencedContainer = "container:SpotTheScientist.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5194AE332276167A00011F4B"
-            BuildableName = "SpotTheScientist.app"
+            BuildableName = "ChristmasAR.app"
             BlueprintName = "SpotTheScientist"
             ReferencedContainer = "container:SpotTheScientist.xcodeproj">
          </BuildableReference>

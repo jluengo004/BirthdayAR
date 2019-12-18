@@ -8,19 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		5194AE382276167A00011F4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5194AE372276167A00011F4B /* AppDelegate.swift */; };
-		5194AE3C2276167A00011F4B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5194AE3B2276167A00011F4B /* ViewController.swift */; };
+		5194AE3C2276167A00011F4B /* HomeARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5194AE3B2276167A00011F4B /* HomeARViewController.swift */; };
 		5194AE3F2276167A00011F4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5194AE3D2276167A00011F4B /* Main.storyboard */; };
 		5194AE442276167D00011F4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5194AE422276167D00011F4B /* LaunchScreen.storyboard */; };
 		5194AE4C22761BD800011F4B /* pistas.json in Resources */ = {isa = PBXBuildFile; fileRef = 5194AE4B22761BD800011F4B /* pistas.json */; };
 		5194AE4E22761BF700011F4B /* Pistas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5194AE4D22761BF700011F4B /* Pistas.swift */; };
 		6D124EEC23A9959A00F25400 /* zelda_item.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6D124EEB23A9959A00F25400 /* zelda_item.mp3 */; };
 		6D3824A323A84085003680FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D3824A223A84085003680FD /* Assets.xcassets */; };
+		6D3F0A8223AABEAB00FC2065 /* HintModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3F0A8123AABEAB00FC2065 /* HintModalViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5194AE342276167A00011F4B /* ChristmasAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChristmasAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5194AE372276167A00011F4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5194AE3B2276167A00011F4B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5194AE3B2276167A00011F4B /* HomeARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeARViewController.swift; sourceTree = "<group>"; };
 		5194AE3E2276167A00011F4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5194AE432276167D00011F4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5194AE452276167D00011F4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -28,6 +29,7 @@
 		5194AE4D22761BF700011F4B /* Pistas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pistas.swift; sourceTree = "<group>"; };
 		6D124EEB23A9959A00F25400 /* zelda_item.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = zelda_item.mp3; sourceTree = "<group>"; };
 		6D3824A223A84085003680FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6D3F0A8123AABEAB00FC2065 /* HintModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HintModalViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +63,8 @@
 			isa = PBXGroup;
 			children = (
 				5194AE372276167A00011F4B /* AppDelegate.swift */,
-				5194AE3B2276167A00011F4B /* ViewController.swift */,
+				5194AE3B2276167A00011F4B /* HomeARViewController.swift */,
+				6D3F0A8123AABEAB00FC2065 /* HintModalViewController.swift */,
 				5194AE3D2276167A00011F4B /* Main.storyboard */,
 				6D124EEB23A9959A00F25400 /* zelda_item.mp3 */,
 				5194AE422276167D00011F4B /* LaunchScreen.storyboard */,
@@ -146,9 +149,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5194AE3C2276167A00011F4B /* ViewController.swift in Sources */,
+				5194AE3C2276167A00011F4B /* HomeARViewController.swift in Sources */,
 				5194AE4E22761BF700011F4B /* Pistas.swift in Sources */,
 				5194AE382276167A00011F4B /* AppDelegate.swift in Sources */,
+				6D3F0A8223AABEAB00FC2065 /* HintModalViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

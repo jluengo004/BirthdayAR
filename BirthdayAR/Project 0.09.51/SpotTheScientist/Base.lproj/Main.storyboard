@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
@@ -8,63 +8,90 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--HomeAR View Controller-->
         <scene sceneID="tXr-a1-R10">
             <objects>
-                <viewController id="BV1-FR-VrT" customClass="ViewController" customModule="SpotTheScientist" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BV1-FR-VrT" customClass="HomeARViewController" customModule="ChristmasAR" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="U0K-SW-4ec">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BrB-h1-WRS">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </arscnView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sOU-2q-VgE">
-                                <rect key="frame" x="0.0" y="766" width="414" height="130"/>
+                                <rect key="frame" x="0.0" y="537" width="375" height="130"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="44" translatesAutoresizingMaskIntoConstraints="NO" id="2qB-KR-XsW">
-                                        <rect key="frame" x="41" y="10" width="332" height="50"/>
+                                        <rect key="frame" x="21.5" y="10" width="332" height="50"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QXf-PA-Eh1">
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QXf-PA-Eh1">
                                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                                 <state key="normal" image="cofre_cerrado"/>
+                                                <connections>
+                                                    <action selector="chestTap:" destination="BV1-FR-VrT" eventType="touchUpInside" id="W0V-5C-KGl"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t6q-Ej-4h2">
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t6q-Ej-4h2">
                                                 <rect key="frame" x="94" y="0.0" width="50" height="50"/>
                                                 <state key="normal" image="cofre_cerrado"/>
+                                                <connections>
+                                                    <action selector="chestTap:" destination="BV1-FR-VrT" eventType="touchUpInside" id="hms-IJ-Bml"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pj3-Jo-XVh">
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pj3-Jo-XVh">
                                                 <rect key="frame" x="188" y="0.0" width="50" height="50"/>
                                                 <state key="normal" image="cofre_cerrado"/>
+                                                <connections>
+                                                    <action selector="chestTap:" destination="BV1-FR-VrT" eventType="touchUpInside" id="TC8-kQ-t2C"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ry7-T6-4Ly">
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ry7-T6-4Ly">
                                                 <rect key="frame" x="282" y="0.0" width="50" height="50"/>
                                                 <state key="normal" image="cofre_cerrado"/>
+                                                <connections>
+                                                    <action selector="chestTap:" destination="BV1-FR-VrT" eventType="touchUpInside" id="QyX-D6-GJx"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="aNd-dm-Y8L">
-                                        <rect key="frame" x="28" y="68" width="358" height="50"/>
+                                        <rect key="frame" x="8.5" y="68" width="358" height="50"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="foP-hv-EL7">
+                                            <button opaque="NO" tag="5" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="foP-hv-EL7">
                                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                                 <state key="normal" image="cofre_cerrado"/>
+                                                <connections>
+                                                    <action selector="chestTap:" destination="BV1-FR-VrT" eventType="touchUpInside" id="je9-CQ-2Rx"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KPd-vL-ZlH">
+                                            <button opaque="NO" tag="6" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KPd-vL-ZlH">
                                                 <rect key="frame" x="77" y="0.0" width="50" height="50"/>
                                                 <state key="normal" image="cofre_cerrado"/>
+                                                <connections>
+                                                    <action selector="chestTap:" destination="BV1-FR-VrT" eventType="touchUpInside" id="9xU-vF-QpP"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v6E-Dd-u3e">
+                                            <button opaque="NO" tag="7" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v6E-Dd-u3e">
                                                 <rect key="frame" x="154" y="0.0" width="50" height="50"/>
                                                 <state key="normal" image="cofre_cerrado"/>
+                                                <connections>
+                                                    <action selector="chestTap:" destination="BV1-FR-VrT" eventType="touchUpInside" id="ehf-gC-uzT"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OMw-yU-2ht">
+                                            <button opaque="NO" tag="8" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OMw-yU-2ht">
                                                 <rect key="frame" x="231" y="0.0" width="50" height="50"/>
                                                 <state key="normal" image="cofre_cerrado"/>
+                                                <connections>
+                                                    <action selector="chestTap:" destination="BV1-FR-VrT" eventType="touchUpInside" id="Q6Z-NF-3vW"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ph-Z5-zX2">
+                                            <button opaque="NO" tag="9" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ph-Z5-zX2">
                                                 <rect key="frame" x="308" y="0.0" width="50" height="50"/>
                                                 <state key="normal" image="cofre_cerrado"/>
+                                                <connections>
+                                                    <action selector="chestTap:" destination="BV1-FR-VrT" eventType="touchUpInside" id="oYh-Pp-C0I"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -101,14 +128,75 @@
                         <outlet property="cofreTostadora8" destination="OMw-yU-2ht" id="6N0-BJ-62w"/>
                         <outlet property="cofreZapatilla5" destination="foP-hv-EL7" id="mqJ-Bg-0z5"/>
                         <outlet property="sceneView" destination="BrB-h1-WRS" id="5nT-qQ-ynl"/>
+                        <segue destination="GwJ-1r-KX4" kind="presentation" identifier="modal" id="ZDX-QK-ugk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="188" y="107"/>
         </scene>
+        <!--Hint Modal View Controller-->
+        <scene sceneID="rfa-eh-HPb">
+            <objects>
+                <viewController id="GwJ-1r-KX4" customClass="HintModalViewController" customModule="ChristmasAR" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QHg-8b-DoQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view alpha="0.60000002384185791" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rtp-iw-pXu">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ihf-XY-Ra4">
+                                <rect key="frame" x="0.0" y="100" width="375" height="447"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="burned-paper" translatesAutoresizingMaskIntoConstraints="NO" id="eWx-CN-lX6">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="447"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cjR-M7-ueN">
+                                        <rect key="frame" x="90" y="40" width="195" height="367"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="cjR-M7-ueN" firstAttribute="leading" secondItem="Ihf-XY-Ra4" secondAttribute="leading" constant="90" id="96u-7H-Gm3"/>
+                                    <constraint firstAttribute="bottom" secondItem="cjR-M7-ueN" secondAttribute="bottom" constant="40" id="CEQ-5Y-hDd"/>
+                                    <constraint firstAttribute="trailing" secondItem="cjR-M7-ueN" secondAttribute="trailing" constant="90" id="TIB-PM-XDY"/>
+                                    <constraint firstItem="cjR-M7-ueN" firstAttribute="top" secondItem="Ihf-XY-Ra4" secondAttribute="top" constant="40" id="TLr-M8-Pmh"/>
+                                    <constraint firstItem="eWx-CN-lX6" firstAttribute="top" secondItem="Ihf-XY-Ra4" secondAttribute="top" id="YRN-pp-yRB"/>
+                                    <constraint firstAttribute="bottom" secondItem="eWx-CN-lX6" secondAttribute="bottom" id="arE-4n-V4N"/>
+                                    <constraint firstItem="eWx-CN-lX6" firstAttribute="leading" secondItem="Ihf-XY-Ra4" secondAttribute="leading" id="sO1-gr-nRX"/>
+                                    <constraint firstAttribute="trailing" secondItem="eWx-CN-lX6" secondAttribute="trailing" id="xff-IV-Hes"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="rtp-iw-pXu" firstAttribute="top" secondItem="unj-Bg-ex0" secondAttribute="top" id="56b-1h-eNr"/>
+                            <constraint firstItem="unj-Bg-ex0" firstAttribute="trailing" secondItem="Ihf-XY-Ra4" secondAttribute="trailing" id="6hs-vM-vJ0"/>
+                            <constraint firstItem="unj-Bg-ex0" firstAttribute="trailing" secondItem="rtp-iw-pXu" secondAttribute="trailing" id="Rv7-ws-uDN"/>
+                            <constraint firstItem="unj-Bg-ex0" firstAttribute="bottom" secondItem="rtp-iw-pXu" secondAttribute="bottom" id="UTe-L8-Pvk"/>
+                            <constraint firstItem="rtp-iw-pXu" firstAttribute="leading" secondItem="unj-Bg-ex0" secondAttribute="leading" id="YrI-Gx-da7"/>
+                            <constraint firstItem="Ihf-XY-Ra4" firstAttribute="leading" secondItem="unj-Bg-ex0" secondAttribute="leading" id="mHd-ur-syN"/>
+                            <constraint firstItem="unj-Bg-ex0" firstAttribute="bottom" secondItem="Ihf-XY-Ra4" secondAttribute="bottom" constant="100" id="tvJ-2Z-swf"/>
+                            <constraint firstItem="Ihf-XY-Ra4" firstAttribute="top" secondItem="unj-Bg-ex0" secondAttribute="top" constant="100" id="w8n-Xx-nt1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="unj-Bg-ex0"/>
+                    </view>
+                    <connections>
+                        <outlet property="hintLabel" destination="cjR-M7-ueN" id="kI6-Md-hgW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dWq-Yl-oss" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1044" y="112.89355322338831"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="burned-paper" width="1080" height="1920"/>
         <image name="cofre_cerrado" width="50" height="50"/>
     </resources>
 </document>

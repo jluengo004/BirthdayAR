@@ -33,5 +33,15 @@
         "name": "Sora",
         "bio": "Rodeado de pisadas,\nEn la fria tabla,\nDonde la luz no alcanza,\nUn tesoro aguarda",
         "country": "uk"
+    },
+    "tostadora": {
+        "name": "Tostadora",
+        "bio": "Cinco extremidades,\nBlancas y suaves,\nCuando tiene hambre acude a ti,\nPero me quiere mas a mi",
+        "country": "uk"
+    },
+    "kira": {
+        "name": "Kira",
+        "bio": "La bolsa de gimnasio azul,\nSe protege con un candado,\nCuando será la combinación?,\nEn otras pistas la has hallado",
+        "country": "uk"
     }
 }
